@@ -1,0 +1,133 @@
+\doxysection{C\+:/\+Users/1/\+Desktop/\+Final\+\_\+\+Square\+Solve/coop\+\_\+with\+\_\+user.h File Reference}
+\hypertarget{coop__with__user_8h}{}\label{coop__with__user_8h}\index{C:/Users/1/Desktop/Final\_SquareSolve/coop\_with\_user.h@{C:/Users/1/Desktop/Final\_SquareSolve/coop\_with\_user.h}}
+
+
+Read/output variables(coefficients, roots, nroots) quadratic equation also communicate with user.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{coop__with__user_8h_a99032b606072deb308083051f574c5dc}\label{coop__with__user_8h_a99032b606072deb308083051f574c5dc} 
+void {\bfseries Start\+Menu} (void)
+\begin{DoxyCompactList}\small\item\em Welcomes User. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{coop__with__user_8h_a64aa9c70dd0b3ee42982f87fbab03fa0}{Coef\+Scanf}} (double \texorpdfstring{$\ast$}{*}coef, char char\+\_\+coef)
+\begin{DoxyCompactList}\small\item\em scanning coefficients in right way(only numbers) and if user mistaken wrong him that scan doesn\`{}t work \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coop__with__user_8h_a74f809e095b03d544ff158b8ea9e5801}{Read\+Coef}} (double \texorpdfstring{$\ast$}{*}a, double \texorpdfstring{$\ast$}{*}b, double \texorpdfstring{$\ast$}{*}c)
+\begin{DoxyCompactList}\small\item\em fills in coefficients input values asserted if input is bad \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coop__with__user_8h_a88abbc3dc42435388f59206881667391}{Roots\+Out}} (double a, double x1, double x2, int n\+Roots)
+\begin{DoxyCompactList}\small\item\em Output all roots and number roots. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coop__with__user_8h_acc899108273397d771ee7930bd19b853}{Lin\+Out}} (double x1, int n\+Roots)
+\begin{DoxyCompactList}\small\item\em output number of roots and their values for a == 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{coop__with__user_8h_a88ed50f61d94bfb9ca30f7b2be5bbb1e}{Quad\+Out}} (double x1, double x2, int n\+Roots)
+\begin{DoxyCompactList}\small\item\em output number of roots and their values for quadratic equation \end{DoxyCompactList}\item 
+\Hypertarget{coop__with__user_8h_a5c651c3858e3925a0280a7c0cc56f4f4}\label{coop__with__user_8h_a5c651c3858e3925a0280a7c0cc56f4f4} 
+void {\bfseries Bye\+Bye} (void)
+\begin{DoxyCompactList}\small\item\em Goodbyes the user. \end{DoxyCompactList}\item 
+\Hypertarget{coop__with__user_8h_a24d75e30d4832841b7fa698b26539752}\label{coop__with__user_8h_a24d75e30d4832841b7fa698b26539752} 
+void {\bfseries Clean\+Buf} (void)
+\begin{DoxyCompactList}\small\item\em Clean buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Read/output variables(coefficients, roots, nroots) quadratic equation also communicate with user. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{coop__with__user_8h_a64aa9c70dd0b3ee42982f87fbab03fa0}\index{coop\_with\_user.h@{coop\_with\_user.h}!CoefScanf@{CoefScanf}}
+\index{CoefScanf@{CoefScanf}!coop\_with\_user.h@{coop\_with\_user.h}}
+\doxysubsubsection{\texorpdfstring{CoefScanf()}{CoefScanf()}}
+{\footnotesize\ttfamily \label{coop__with__user_8h_a64aa9c70dd0b3ee42982f87fbab03fa0} 
+int Coef\+Scanf (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{coef}{, }\item[{char}]{char\+\_\+coef}{}\end{DoxyParamCaption})}
+
+
+
+scanning coefficients in right way(only numbers) and if user mistaken wrong him that scan doesn\`{}t work 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em coef} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em char\+\_\+coef} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ scans well 0 -\/ scans not all 
+\end{DoxyReturn}
+\Hypertarget{coop__with__user_8h_acc899108273397d771ee7930bd19b853}\index{coop\_with\_user.h@{coop\_with\_user.h}!LinOut@{LinOut}}
+\index{LinOut@{LinOut}!coop\_with\_user.h@{coop\_with\_user.h}}
+\doxysubsubsection{\texorpdfstring{LinOut()}{LinOut()}}
+{\footnotesize\ttfamily \label{coop__with__user_8h_acc899108273397d771ee7930bd19b853} 
+void Lin\+Out (\begin{DoxyParamCaption}\item[{double}]{x1}{, }\item[{int}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+output number of roots and their values for a == 0 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x1} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em n\+Roots} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{coop__with__user_8h_a88ed50f61d94bfb9ca30f7b2be5bbb1e}\index{coop\_with\_user.h@{coop\_with\_user.h}!QuadOut@{QuadOut}}
+\index{QuadOut@{QuadOut}!coop\_with\_user.h@{coop\_with\_user.h}}
+\doxysubsubsection{\texorpdfstring{QuadOut()}{QuadOut()}}
+{\footnotesize\ttfamily \label{coop__with__user_8h_a88ed50f61d94bfb9ca30f7b2be5bbb1e} 
+void Quad\+Out (\begin{DoxyParamCaption}\item[{double}]{x1}{, }\item[{double}]{x2}{, }\item[{int}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+output number of roots and their values for quadratic equation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x2} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{coop__with__user_8h_a74f809e095b03d544ff158b8ea9e5801}\index{coop\_with\_user.h@{coop\_with\_user.h}!ReadCoef@{ReadCoef}}
+\index{ReadCoef@{ReadCoef}!coop\_with\_user.h@{coop\_with\_user.h}}
+\doxysubsubsection{\texorpdfstring{ReadCoef()}{ReadCoef()}}
+{\footnotesize\ttfamily \label{coop__with__user_8h_a74f809e095b03d544ff158b8ea9e5801} 
+void Read\+Coef (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{c}{}\end{DoxyParamCaption})}
+
+
+
+fills in coefficients input values asserted if input is bad 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em a} & -\/ Pointer \\
+\hline
+\mbox{\texttt{ out}}  & {\em b} & -\/ Pointer \\
+\hline
+\mbox{\texttt{ out}}  & {\em c} & -\/ Pointer \\
+\hline
+\end{DoxyParams}
+\Hypertarget{coop__with__user_8h_a88abbc3dc42435388f59206881667391}\index{coop\_with\_user.h@{coop\_with\_user.h}!RootsOut@{RootsOut}}
+\index{RootsOut@{RootsOut}!coop\_with\_user.h@{coop\_with\_user.h}}
+\doxysubsubsection{\texorpdfstring{RootsOut()}{RootsOut()}}
+{\footnotesize\ttfamily \label{coop__with__user_8h_a88abbc3dc42435388f59206881667391} 
+void Roots\+Out (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{x1}{, }\item[{double}]{x2}{, }\item[{int}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+Output all roots and number roots. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em n\+Roots} & \\
+\hline
+\end{DoxyParams}

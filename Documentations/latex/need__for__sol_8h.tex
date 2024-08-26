@@ -1,0 +1,132 @@
+\doxysection{C\+:/\+Users/1/\+Desktop/\+Final\+\_\+\+Square\+Solve/need\+\_\+for\+\_\+sol.h File Reference}
+\hypertarget{need__for__sol_8h}{}\label{need__for__sol_8h}\index{C:/Users/1/Desktop/Final\_SquareSolve/need\_for\_sol.h@{C:/Users/1/Desktop/Final\_SquareSolve/need\_for\_sol.h}}
+
+
+calculate number of roots and their values  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{need__for__sol_8h_a0215e95cbcd5184ce3cb41f7d02d4dfa}{Is\+Zero}} (double D)
+\begin{DoxyCompactList}\small\item\em complain float-\/numbers with 0 \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{need__for__sol_8h_a387e3accdaf0dea5a8da2919f3b61847}{Discr\+Roots}} (double a, double b, double c)
+\begin{DoxyCompactList}\small\item\em by discriminant determines how much roots in quadratic equation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{need__for__sol_8h_aeb2268bca710f4d1c0ca359be0e40da0}{Square\+Sol}} (double a, double b, double c, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2, int \texorpdfstring{$\ast$}{*}n\+Roots)
+\begin{DoxyCompactList}\small\item\em Square solver assigns to x1, x2, n\+Roots values. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{need__for__sol_8h_ab1255fda80ddb62687e9a93b72e89db6}{Lin\+Roots}} (double b, double c)
+\begin{DoxyCompactList}\small\item\em by other coefficients determines how much roots in linear equation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{need__for__sol_8h_aa7d1c9982194919c1713328119bf383b}{Lin\+Sol}} (double b, double c, double \texorpdfstring{$\ast$}{*}x1, int \texorpdfstring{$\ast$}{*}n\+Roots)
+\begin{DoxyCompactList}\small\item\em Linear equation solver assigns to x1, x2, n\+Roots values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+calculate number of roots and their values 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{need__for__sol_8h_a387e3accdaf0dea5a8da2919f3b61847}\index{need\_for\_sol.h@{need\_for\_sol.h}!DiscrRoots@{DiscrRoots}}
+\index{DiscrRoots@{DiscrRoots}!need\_for\_sol.h@{need\_for\_sol.h}}
+\doxysubsubsection{\texorpdfstring{DiscrRoots()}{DiscrRoots()}}
+{\footnotesize\ttfamily \label{need__for__sol_8h_a387e3accdaf0dea5a8da2919f3b61847} 
+int Discr\+Roots (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
+
+
+
+by discriminant determines how much roots in quadratic equation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{need__for__sol_8h_a0215e95cbcd5184ce3cb41f7d02d4dfa}\index{need\_for\_sol.h@{need\_for\_sol.h}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!need\_for\_sol.h@{need\_for\_sol.h}}
+\doxysubsubsection{\texorpdfstring{IsZero()}{IsZero()}}
+{\footnotesize\ttfamily \label{need__for__sol_8h_a0215e95cbcd5184ce3cb41f7d02d4dfa} 
+int Is\+Zero (\begin{DoxyParamCaption}\item[{double}]{D}{}\end{DoxyParamCaption})}
+
+
+
+complain float-\/numbers with 0 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em D} & any float-\/number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ if complain to zero False -\/ Else 
+\end{DoxyReturn}
+\Hypertarget{need__for__sol_8h_ab1255fda80ddb62687e9a93b72e89db6}\index{need\_for\_sol.h@{need\_for\_sol.h}!LinRoots@{LinRoots}}
+\index{LinRoots@{LinRoots}!need\_for\_sol.h@{need\_for\_sol.h}}
+\doxysubsubsection{\texorpdfstring{LinRoots()}{LinRoots()}}
+{\footnotesize\ttfamily \label{need__for__sol_8h_ab1255fda80ddb62687e9a93b72e89db6} 
+int Lin\+Roots (\begin{DoxyParamCaption}\item[{double}]{b}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
+
+
+
+by other coefficients determines how much roots in linear equation 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{need__for__sol_8h_aa7d1c9982194919c1713328119bf383b}\index{need\_for\_sol.h@{need\_for\_sol.h}!LinSol@{LinSol}}
+\index{LinSol@{LinSol}!need\_for\_sol.h@{need\_for\_sol.h}}
+\doxysubsubsection{\texorpdfstring{LinSol()}{LinSol()}}
+{\footnotesize\ttfamily \label{need__for__sol_8h_aa7d1c9982194919c1713328119bf383b} 
+void Lin\+Sol (\begin{DoxyParamCaption}\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+Linear equation solver assigns to x1, x2, n\+Roots values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1-\/pointer} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em n\+Roots-\/pointer} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{need__for__sol_8h_aeb2268bca710f4d1c0ca359be0e40da0}\index{need\_for\_sol.h@{need\_for\_sol.h}!SquareSol@{SquareSol}}
+\index{SquareSol@{SquareSol}!need\_for\_sol.h@{need\_for\_sol.h}}
+\doxysubsubsection{\texorpdfstring{SquareSol()}{SquareSol()}}
+{\footnotesize\ttfamily \label{need__for__sol_8h_aeb2268bca710f4d1c0ca359be0e40da0} 
+void Square\+Sol (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x2}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+Square solver assigns to x1, x2, n\+Roots values. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1-\/pointer} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2-\/pointer} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em n\+Roots-\/pointer} & \\
+\hline
+ & {\em D} & -\/ Discriminant of quadratic equation. Formula D = b \texorpdfstring{$\ast$}{*} b -\/ 4\texorpdfstring{$\ast$}{*}a\texorpdfstring{$\ast$}{*}c \\
+\hline
+\end{DoxyParams}

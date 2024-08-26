@@ -1,0 +1,45 @@
+//square_solver.c
+//solver quadratic equation type: a*x2 + b*x + c = 0
+#include "unit_tests.h"
+#include "asserts.h"
+#include "need_for_sol.h"
+#include "coop_with_user.h"
+
+/*! @mainpage ax^2 + bx + c = 0
+ *
+ * @section designation
+ *
+ * @subsection Coefficients
+ * @param a - First coefficient quadratic equation
+ * @param b - Second coefficient quadratic equation
+ * @param c - Third coefficient quadratic equation
+ * @subsection Roots
+ * @param x1 - First root of quadratic equation
+ * @param x1EXP - x1 expected
+ * @param x2 - Second root of quadratic equation
+ * @param x2EXP - x2 expected
+ * @param nRoots - number of roots
+ * @param nRootsEXP - nRoots expected
+*/
+
+
+
+int main()
+{
+#ifdef UNIT_TESTS_FLAG
+    size_t sizeout = 0;
+    QuadEqu * unit = UnitFill(&sizeout);
+    UnitTests(unit, sizeout);
+    free(unit);
+#endif
+    
+    int nRoots = -1;                           //number of roots
+    double a =  NAN, b = NAN, c = NAN;         //a - first coef, b - second coef, c - third coef
+    double x1 = NAN, x2 = NAN;                 // the roots of quadratic equation
+
+    StartMenu();
+    ReadCoef(&a, &b, &c);
+    SquareSol(a, b, c, &x1, &x2, &nRoots);
+    RootsOut(a, x1, x2, nRoots);
+
+}

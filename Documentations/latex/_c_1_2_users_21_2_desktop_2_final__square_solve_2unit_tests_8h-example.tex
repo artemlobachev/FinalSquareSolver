@@ -1,0 +1,49 @@
+\hypertarget{_c_1_2_users_21_2_desktop_2_final__square_solve_2unit_tests_8h-example}{}\doxysection{C\+:/\+Users/1/\+Desktop/\+Final\+\_\+\+Square\+Solve/unit\+\_\+tests.\+h}
+Calculates the factorial of a number.\+This function computes the factorial of a given non-\/negative integer. It uses a recursive approach to calculate the factorial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number for which the factorial is to be calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The factorial of the number.
+\end{DoxyReturn}
+The factorial of a non-\/negative integer n is the product of all positive integers less than or equal to n. For example, the factorial of 5 is 5 $\ast$ 4 $\ast$ 3 $\ast$ 2 $\ast$ 1 = 120. This function uses recursion to compute the factorial.
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#ifndef UT\_H}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define UT\_H}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{struct }\mbox{\hyperlink{struct_quad_coef}{QuadCoef}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordtype}{double} a;}
+\DoxyCodeLine{    \textcolor{keywordtype}{double} b;}
+\DoxyCodeLine{    \textcolor{keywordtype}{double} c;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{struct }\mbox{\hyperlink{struct_quad_roots}{QuadRoots}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordtype}{double} x1\_EXP;}
+\DoxyCodeLine{    \textcolor{keywordtype}{double} x2\_EXP;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{struct }\mbox{\hyperlink{struct_quad_equ}{QuadEqu}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{struct_quad_coef}{QuadCoef}} Coef;}
+\DoxyCodeLine{    \mbox{\hyperlink{struct_quad_roots}{QuadRoots}} Roots;}
+\DoxyCodeLine{    \textcolor{keywordtype}{int} nRoots\_EXP;}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{void} UnitFill(\mbox{\hyperlink{struct_quad_equ}{QuadEqu}} * FILL);}
+\DoxyCodeLine{\mbox{\hyperlink{struct_quad_equ}{QuadEqu}}* UnitFill(\textcolor{keywordtype}{size\_t} * sizeout);}
+\DoxyCodeLine{\textcolor{keywordtype}{void} UnitTests(\mbox{\hyperlink{struct_quad_equ}{QuadEqu}} * unit, \textcolor{keywordtype}{size\_t} SIZE);}
+\DoxyCodeLine{\textcolor{keywordtype}{void} UnitTest\_Quad(\textcolor{keywordtype}{double} a, \textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c, \textcolor{keywordtype}{double} x1\_EXP, \textcolor{keywordtype}{double} x1, \textcolor{keywordtype}{double} x2\_EXP, \textcolor{keywordtype}{double} x2, \textcolor{keywordtype}{int} nRoots\_EXP, \textcolor{keywordtype}{int} nRoots);}
+\DoxyCodeLine{\textcolor{keywordtype}{void} UnitTest\_Linear(\textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c, \textcolor{keywordtype}{double} x1\_EXP, \textcolor{keywordtype}{double} x1, \textcolor{keywordtype}{int} nRoots\_EXP, \textcolor{keywordtype}{int} nRoots);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCodeInclude}
+ 

@@ -1,0 +1,127 @@
+\doxysection{C\+:/\+Users/1/\+Desktop/\+Final\+\_\+\+Square\+Solve/unit\+\_\+tests.h File Reference}
+\hypertarget{unit__tests_8h}{}\label{unit__tests_8h}\index{C:/Users/1/Desktop/Final\_SquareSolve/unit\_tests.h@{C:/Users/1/Desktop/Final\_SquareSolve/unit\_tests.h}}
+
+
+Unit tests for program safety.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_quad_coef}{Quad\+Coef}}
+\item 
+struct \mbox{\hyperlink{struct_quad_roots}{Quad\+Roots}}
+\item 
+struct \mbox{\hyperlink{struct_quad_equ}{Quad\+Equ}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_quad_equ}{Quad\+Equ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{unit__tests_8h_acae856f0c6d22f075d96b397d1d96304}{Unit\+Fill}} (size\+\_\+t \texorpdfstring{$\ast$}{*}sizeout)
+\begin{DoxyCompactList}\small\item\em after finishing the function we have pointer on array of structures and his size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__tests_8h_a4294af7c97e93bf4fc1087ad4e4ae478}{Unit\+Tests}} (\mbox{\hyperlink{struct_quad_equ}{Quad\+Equ}} \texorpdfstring{$\ast$}{*}unit, size\+\_\+t SIZE)
+\begin{DoxyCompactList}\small\item\em testing unit-\/tests and outputs wrong if they don\`{}t comply \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__tests_8h_ac9c52bc7b4d93085c9ea4145e33f0097}{Unit\+Test\+Quad}} (double a, double b, double c, double x1\+EXP, double x1, double x2\+EXP, double x2, int n\+Roots\+EXP, int n\+Roots)
+\begin{DoxyCompactList}\small\item\em Unit-\/test for quadratic equation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{unit__tests_8h_acc4c19c374ab4e15ce32a834fd719e69}{Unit\+Test\+Linear}} (double b, double c, double x1\+EXP, double x1, int n\+Roots\+EXP, int n\+Roots)
+\begin{DoxyCompactList}\small\item\em Unit-\/test for linear equation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unit tests for program safety. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{unit__tests_8h_acae856f0c6d22f075d96b397d1d96304}\index{unit\_tests.h@{unit\_tests.h}!UnitFill@{UnitFill}}
+\index{UnitFill@{UnitFill}!unit\_tests.h@{unit\_tests.h}}
+\doxysubsubsection{\texorpdfstring{UnitFill()}{UnitFill()}}
+{\footnotesize\ttfamily \label{unit__tests_8h_acae856f0c6d22f075d96b397d1d96304} 
+\mbox{\hyperlink{struct_quad_equ}{Quad\+Equ}} \texorpdfstring{$\ast$}{*} Unit\+Fill (\begin{DoxyParamCaption}\item[{size\+\_\+t \texorpdfstring{$\ast$}{*}}]{sizeout}{}\end{DoxyParamCaption})}
+
+
+
+after finishing the function we have pointer on array of structures and his size 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sizeout-\/pointer} & -\/ size(in numbers not in memory) array of structures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer on array of structures 
+\end{DoxyReturn}
+\Hypertarget{unit__tests_8h_acc4c19c374ab4e15ce32a834fd719e69}\index{unit\_tests.h@{unit\_tests.h}!UnitTestLinear@{UnitTestLinear}}
+\index{UnitTestLinear@{UnitTestLinear}!unit\_tests.h@{unit\_tests.h}}
+\doxysubsubsection{\texorpdfstring{UnitTestLinear()}{UnitTestLinear()}}
+{\footnotesize\ttfamily \label{unit__tests_8h_acc4c19c374ab4e15ce32a834fd719e69} 
+void Unit\+Test\+Linear (\begin{DoxyParamCaption}\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double}]{x1\+EXP}{, }\item[{double}]{x1}{, }\item[{int}]{n\+Roots\+EXP}{, }\item[{int}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+Unit-\/test for linear equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1\+EXP} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Roots\+EXP} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Roots} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{unit__tests_8h_ac9c52bc7b4d93085c9ea4145e33f0097}\index{unit\_tests.h@{unit\_tests.h}!UnitTestQuad@{UnitTestQuad}}
+\index{UnitTestQuad@{UnitTestQuad}!unit\_tests.h@{unit\_tests.h}}
+\doxysubsubsection{\texorpdfstring{UnitTestQuad()}{UnitTestQuad()}}
+{\footnotesize\ttfamily \label{unit__tests_8h_ac9c52bc7b4d93085c9ea4145e33f0097} 
+void Unit\+Test\+Quad (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double}]{x1\+EXP}{, }\item[{double}]{x1}{, }\item[{double}]{x2\+EXP}{, }\item[{double}]{x2}{, }\item[{int}]{n\+Roots\+EXP}{, }\item[{int}]{n\+Roots}{}\end{DoxyParamCaption})}
+
+
+
+Unit-\/test for quadratic equation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1\+EXP} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2\+EXP} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em x2} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Roots\+EXP} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+Roots} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{unit__tests_8h_a4294af7c97e93bf4fc1087ad4e4ae478}\index{unit\_tests.h@{unit\_tests.h}!UnitTests@{UnitTests}}
+\index{UnitTests@{UnitTests}!unit\_tests.h@{unit\_tests.h}}
+\doxysubsubsection{\texorpdfstring{UnitTests()}{UnitTests()}}
+{\footnotesize\ttfamily \label{unit__tests_8h_a4294af7c97e93bf4fc1087ad4e4ae478} 
+void Unit\+Tests (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_quad_equ}{Quad\+Equ}} \texorpdfstring{$\ast$}{*}}]{unit}{, }\item[{size\+\_\+t}]{SIZE}{}\end{DoxyParamCaption})}
+
+
+
+testing unit-\/tests and outputs wrong if they don\`{}t comply 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em unit-\/pointer} & pointer on array of structures \\
+\hline
+\mbox{\texttt{ in}}  & {\em SIZE} & size array of Structures \\
+\hline
+\end{DoxyParams}
